@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+
+:root {
+    --cor-primaria: #2E073F; 
+    --cor-secundaria: #dccfe3 ; 
+    --cor-tercearia: #AD49E1; 
+    --cor-hover: #EBD3F8;
+
+    --fonte-primaria:"Big Shoulders", sans-serif;
+    --fonte-secundaria:"Dancing Script", cursive;
+    --fonte-terciaria: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-terciaria);     
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 60px;
+
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+
+}
+
+.apresentacao {
+    padding: 3% 10%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+}
+
+strong {
+    
+    color:var(--cor-tercearia);
+}
+
+.descricao {
+    font-size: 1rem;   
+    font-family: var(--fonte-primaria);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.descricao__chama {
+    text-align: center;
+    display: flex;
+    padding-left: 0;
+    font-size: 1.12rem;
+
+    font-family: var(--fonte-primaria);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    margin: 5px;
+
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+    margin-right: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 0.93rem;
+
+    border: 2px solid var(--cor-tercearia);
+    width: 80%;
+    padding: 1px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-terciaria);
+}
+
+.botoes:hover {
+    background-color: var(--cor-hover);
+    
+    
+}
+
+.fotoPerfil {
+    border-radius: 60%;
+    border-top-left-radius: 100%;
+    margin-top: 5%;
+    width: 90%; 
+}
+
+.rodape {
+    padding: 16px;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-tercearia);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1,25rem;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 3%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+
+}
+
+
